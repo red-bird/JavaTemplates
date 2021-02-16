@@ -220,4 +220,32 @@ public class SynchronizedMap<K, V> extends HashMap {
         lock.unlock();
         return tmp;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        Lock lock = new ReentrantLock();
+        lock.lock();
+        boolean tmp = super.equals(o);
+        lock.unlock();
+        return tmp;
+    }
+
+    @Override
+    public int hashCode() {
+        Lock lock = new ReentrantLock();
+        lock.lock();
+        int tmp = super.hashCode();
+        lock.unlock();
+        return tmp;
+    }
+
+    @Override
+    public String toString() {
+        Lock lock = new ReentrantLock();
+        lock.lock();
+        String tmp = super.toString();
+        lock.unlock();
+        return tmp;
+    }
+
 }
