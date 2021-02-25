@@ -16,7 +16,7 @@ public class Main {
         System.out.println("---------------");
 
 
-        
+
         // Mediator
 
         /// go to login page
@@ -36,8 +36,7 @@ public class Main {
         System.out.println("---------------");
 
         ///Registration
-        ((Button)auth.getRegButton()).click();
-        ((Button)auth.getOkButton()).click();
+        ((Button)auth.getRegButton()).click();        ((Button)auth.getOkButton()).click();
         System.out.println("---------------");
     }
 }
