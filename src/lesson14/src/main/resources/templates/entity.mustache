@@ -1,0 +1,68 @@
+<html>
+<head>
+    <title>entities</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        .center {
+            text-align: center;
+            font-family: "Roboto Light",serif;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body class="center">
+    <br>
+    <div>
+        <form method="post" action="/entities/book">
+            <input type="text" name="name" placeholder="Введите название книги" />
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div>
+        <form method="post" action="/entities/book/del">
+            <input type="text" name="name" placeholder="Введите название книги" />
+            <button type="submit">Удалить</button>
+        </form>
+    </div>
+    <br>
+    {{#books}}
+    <div>
+        <b>{{name}}</b>
+        <i>{{creationDate}}</i>
+    </div>
+    {{/books}}
+
+    <hr>
+    <br>
+    <div>
+        <form method="post" action="/entities/author">
+            <input type="text" name="firstName" placeholder="Введите имя автора" />
+            <input type="text" name="lastName" placeholder="Введите фамилию автора" />
+            <input type="text" name="middleName" placeholder="Введите отчество автора" />
+            <input type="text" name="birthDate" placeholder="Введите день рождения автора" />
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div>
+        <form method="post" action="/entities/author/del">
+            <input type="text" name="firstName" placeholder="Введите имя автора" />
+            <button type="submit">Ликвидировать</button>
+        </form>
+    </div>
+    <br>
+    {{#authors}}
+    <div>
+        <i>{{firstName}}</i>
+        <i>{{lastName}}</i>
+        <i>{{middleName}}</i>
+        <b>{{birthDate}}</b>
+    </div>
+    {{/authors}}
+
+</body>
+</html>
