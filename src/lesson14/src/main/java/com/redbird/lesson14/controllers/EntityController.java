@@ -1,7 +1,7 @@
 package com.redbird.lesson14.controllers;
 
-import com.redbird.lesson14.model.Author;
-import com.redbird.lesson14.model.Book;
+import com.redbird.lesson14.models.Author;
+import com.redbird.lesson14.models.Book;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 

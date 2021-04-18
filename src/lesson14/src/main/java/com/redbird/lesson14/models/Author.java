@@ -1,4 +1,4 @@
-package com.redbird.lesson14.model;
+package com.redbird.lesson14.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
