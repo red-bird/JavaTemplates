@@ -2,7 +2,7 @@ timezone: Europe/Moscow
 hibernate:
   dialect: org.hibernate.dialect.PostgreSQL95Dialect
 datasource:
-  url: jdbc:postgresql://localhost:5432/library
+  url: jdbc:postgresql://${datasource}:5432/library
   username: postgres
   password: "0000"
 
