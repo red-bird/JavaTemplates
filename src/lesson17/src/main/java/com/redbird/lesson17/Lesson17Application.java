@@ -1,4 +1,4 @@
-package com.redbird.lesson15;
+package com.redbird.lesson17;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -8,8 +8,7 @@ import javax.annotation.PostConstruct;
 import java.util.TimeZone;
 
 @SpringBootApplication
-public class Lesson16Application {
-
+public class Lesson17Application {
 
     @Value("${timezone}")
     private String timezone;
@@ -20,7 +19,7 @@ public class Lesson16Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Lesson16Application.class, args);
+        SpringApplication.run(Lesson17Application.class, args);
     }
 
 }

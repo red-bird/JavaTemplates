@@ -1,9 +1,8 @@
-package com.redbird.lesson15.models;
+package com.redbird.lesson16.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.util.List;

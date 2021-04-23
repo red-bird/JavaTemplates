@@ -13,8 +13,4 @@ student:
   var: "Variant 3"
 
 scan:
-  dir: "com.redbird.lesson16.models"
-#spring:
-#  jpa:
-#    hibernate:
-#      ddl-auto: create-drop
+  dir: "com.redbird.lesson17.models"

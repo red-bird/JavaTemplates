@@ -1,4 +1,4 @@
-package com.redbird.lesson15.controllers;
+package com.redbird.lesson17.controllers;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

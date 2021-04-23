@@ -1,6 +1,6 @@
-package com.redbird.lesson15.services;
+package com.redbird.lesson16.services;
 
-import com.redbird.lesson15.models.Author;
+import com.redbird.lesson16.models.Author;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;

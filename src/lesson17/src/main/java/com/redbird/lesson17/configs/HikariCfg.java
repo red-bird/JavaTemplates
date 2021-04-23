@@ -1,4 +1,4 @@
-package com.redbird.lesson15.configs;
+package com.redbird.lesson17.configs;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -23,6 +23,8 @@ public class HikariCfg {
     private String password;
     @Value("${hibernate.dialect}")
     private String dialect;
+    @Value("${scan.dir}")
+    private String dir;
 
     @Bean
     public HikariDataSource dataSource() {
@@ -38,7 +40,7 @@ public class HikariCfg {
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
         sessionFactoryBean.setDataSource(dataSource);
 
-        sessionFactoryBean.setPackagesToScan("com.redbird.lesson15.models");
+        sessionFactoryBean.setPackagesToScan(dir);
         Properties properties = new Properties();
         properties.setProperty(
                 "hibernate.dialect",

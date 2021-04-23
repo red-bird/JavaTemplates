@@ -1,0 +1,147 @@
+<html>
+<head>
+    <title>entities</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        .center {
+            text-align: center;
+            font-family: "Roboto Light",serif;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body class="center">
+    {{#result}}
+    <p>Автор книги: {{result}}</p>
+    {{/result}}
+    <div>
+        <p>Узнать автора по ID книги</p>
+        <form method="get" action="/entities/book/getAuthor">
+            <input type="text" name="bookId" placeholder="Введите ID книги" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <div>
+        <p>Узнать книги по айди автора</p>
+        <form method="get" action="/entities/book/getByAuthorId">
+            <input type="text" name="authorId" placeholder="Введите ID книги" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <div>
+        <p>Узнать автора по дате создания</p>
+        <form method="get" action="/entities/book/getByDate">
+            <input type="text" name="date" placeholder="Введите ID книги" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <div>
+        <p>Узнать книги по названию</p>
+        <form method="get" action="/entities/book/getByName">
+            <input type="text" name="name" placeholder="Введите имя книги" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <div>
+        <p>Узнать книгу по айди</p>
+        <form method="get" action="/entities/book/getById">
+            <input type="text" name="id" placeholder="Введите ID книги" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <div>
+        <p>Добавление книги</p>
+        <form method="post" action="/entities/book">
+            <input type="text" name="name" placeholder="Введите название книги" />
+            <input type="text" name="authorId" placeholder="Введите ID автора" />
+            <input type="text" name="creationDate" placeholder="Введите дату" />
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <div>
+        <p>Удаление книги</p>
+        <form method="post" action="/entities/book/del">
+            <input type="text" name="name" placeholder="Введите название книги" />
+            <button type="submit">Удалить</button>
+        </form>
+    </div>
+    <hr>
+    <br>
+    {{#books}}
+    <div>
+        <i><b>id</b>:{{id}}</i>
+        <i><b>authorId</b>:{{author.id}}</i>
+        <i><b>name</b>:{{name}}</i>
+        <i><b>creation date</b>:{{creationDate}}</i>
+    </div>
+    {{/books}}
+
+    <hr>
+    <div>
+        <p>Узнать автора по ID</p>
+        <form method="get" action="/entities/author/getAuthorById">
+            <input type="text" name="id" placeholder="Введите ID автора" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <div>
+        <p>Узнать автора по имени</p>
+        <form method="get" action="/entities/author/getAuthorByFirstname">
+            <input type="text" name="firstname" placeholder="Введите имя автора" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <div>
+        <p>Узнать автора по фамилии</p>
+        <form method="get" action="/entities/author/getAuthorByLastname">
+            <input type="text" name="lastname" placeholder="Введите фамилию автора" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <div>
+        <p>Узнать автора по отчеству</p>
+        <form method="get" action="/entities/author/getAuthorByMiddlename">
+            <input type="text" name="middlename" placeholder="Введите отчество автора" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <div>
+        <p>Узнать автора по дате рождения</p>
+        <form method="get" action="/entities/author/getAuthorByBirthdate">
+            <input type="text" name="birthdate" placeholder="Введите дату рождения автора" />
+            <button type="submit">Узнать</button>
+        </form>
+    </div>
+    <br>
+    <div>
+        <p>Добавление автора</p>
+        <form method="post" action="/entities/author">
+            <input type="text" name="firstName" placeholder="Введите имя автора" />
+            <input type="text" name="lastName" placeholder="Введите фамилию автора" />
+            <input type="text" name="middleName" placeholder="Введите отчество автора" />
+            <input type="text" name="birthDate" placeholder="Введите день рождения автора" />
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <div>
+        <p>Удаление автора</p>
+        <form method="post" action="/entities/author/del">
+            <input type="text" name="id" placeholder="Введите ID автора" />
+            <button type="submit">Ликвидировать</button>
+        </form>
+    </div>
+    <br>
+    <hr>
+    {{#authors}}
+    <div>
+        <i><b>id</b>:{{id}}</i>
+        <i><b>first name</b>:{{firstName}}</i>
+        <i><b>last name</b>:{{lastName}}</i>
+        <i><b>middle name</b>:{{middleName}}</i>
+        <i><b>birth date</b>:{{birthDate}}</i>
+    </div>
+    {{/authors}}
+
+</body>
+</html>

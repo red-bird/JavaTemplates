@@ -1,15 +1,12 @@
-package com.redbird.lesson15.controllers;
+package com.redbird.lesson16.controllers;
 
-import com.redbird.lesson15.models.Author;
-import com.redbird.lesson15.models.Book;
-import com.redbird.lesson15.services.AuthorService;
-import com.redbird.lesson15.services.BookService;
+import com.redbird.lesson16.models.Author;
+import com.redbird.lesson16.services.AuthorService;
+import com.redbird.lesson16.services.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 @Controller
