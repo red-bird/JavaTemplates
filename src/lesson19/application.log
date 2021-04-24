@@ -1,0 +1,136 @@
+70122 [http-nio-8080-exec-8] INFO  c.r.lesson19.services.BookService
+                – get books by creation date: [Book(id=3, name=asd, creationDate=asd, author=Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd))]
+70130 [http-nio-8080-exec-8] INFO  c.r.lesson19.services.BookService
+                – Find all books
+70143 [http-nio-8080-exec-8] INFO  c.r.lesson19.services.AuthorService
+                – 
+83083 [http-nio-8080-exec-10] INFO  c.r.lesson19.services.BookService
+                – get book by bookId 5
+83084 [http-nio-8080-exec-10] INFO  c.r.lesson19.services.BookService
+                – delete book: Book(id=5, name=la, creationDate=la, author=Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd))
+83185 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.BookService
+                – Find all books
+83197 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.AuthorService
+                – 
+90727 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+90729 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+90735 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+90751 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1095 [main] INFO  c.r.lesson19.Lesson19Application
+                – Starting Lesson19Application using Java 15 on HOME-PC with PID 13728 (D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson19)
+1100 [main] INFO  c.r.lesson19.Lesson19Application
+                – No active profile set, falling back to default profiles: default
+2098 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2194 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2949 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2970 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2971 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2971 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3137 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3137 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1932 ms
+3357 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3442 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3618 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3808 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3996 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4052 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5331 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5349 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6113 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6284 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+6589 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6624 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+6639 [main] INFO  c.r.lesson19.Lesson19Application
+                – Started Lesson19Application in 6.367 seconds (JVM running for 7.486)
+11122 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+11122 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+11123 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+11166 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.BookService
+                – Find all books
+11423 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+34382 [http-nio-8080-exec-3] INFO  c.r.lesson19.services.AuthorService
+                – get Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd) by id 2
+34388 [http-nio-8080-exec-3] INFO  c.r.lesson19.services.BookService
+                – Find all books
+34394 [http-nio-8080-exec-3] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+43715 [http-nio-8080-exec-6] INFO  c.r.lesson19.services.AuthorService
+                – get Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd) by id 2
+43739 [http-nio-8080-exec-6] INFO  c.r.lesson19.services.BookService
+                – get [Book(id=3, name=asd, creationDate=asd, author=Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd)), Book(id=4, name=ha, creationDate=ha, author=Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd))] by author: 2
+43740 [http-nio-8080-exec-6] INFO  c.r.lesson19.services.BookService
+                – Find all books
+43748 [http-nio-8080-exec-6] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+56485 [http-nio-8080-exec-10] INFO  c.r.lesson19.services.BookService
+                – get [Book(id=3, name=asd, creationDate=asd, author=Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd))] by creation date: asd
+56485 [http-nio-8080-exec-10] INFO  c.r.lesson19.services.BookService
+                – Find all books
+56493 [http-nio-8080-exec-10] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+78668 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.AuthorService
+                – get [Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd)] by middlename: asd
+78669 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.BookService
+                – Find all books
+78676 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+86753 [http-nio-8080-exec-5] INFO  c.r.lesson19.services.AuthorService
+                – get [Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd)] by lastname: asd
+86753 [http-nio-8080-exec-5] INFO  c.r.lesson19.services.BookService
+                – Find all books
+86759 [http-nio-8080-exec-5] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+111231 [http-nio-8080-exec-9] INFO  c.r.lesson19.services.AuthorService
+                – save author Author(id=3, firstName=ha, lastName=ha, middleName=ha, birthDate=ha)
+111231 [http-nio-8080-exec-9] INFO  c.r.lesson19.services.BookService
+                – Find all books
+111243 [http-nio-8080-exec-9] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+111300 [http-nio-8080-exec-10] INFO  c.r.lesson19.services.BookService
+                – Find all books
+111313 [http-nio-8080-exec-10] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+125831 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.AuthorService
+                – get Author(id=3, firstName=ha, lastName=ha, middleName=ha, birthDate=ha) by id 3
+125831 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.AuthorService
+                – delete author: Author(id=3, firstName=ha, lastName=ha, middleName=ha, birthDate=ha)
+125897 [http-nio-8080-exec-3] INFO  c.r.lesson19.services.BookService
+                – Find all books
+125909 [http-nio-8080-exec-3] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+149785 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+149787 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+149797 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+149804 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.

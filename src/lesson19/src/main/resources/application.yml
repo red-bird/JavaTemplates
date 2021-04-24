@@ -1,0 +1,22 @@
+#timezone: Europe/Moscow
+
+spring:
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQL95Dialect
+      jdbc:
+        time_zone: Europe/Moscow
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/library
+    username: postgres
+    password: "0000"
+
+student:
+  name: Egor
+  last_name: Paramoshkin
+  group: IKBO-10-19
+  var: "Variant 3"
+
+#scan:
+#  dir: "com.redbird.lesson18.models"
