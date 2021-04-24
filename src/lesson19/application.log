@@ -134,3 +134,611 @@
                 – HikariPool-1 - Shutdown initiated...
 149804 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Shutdown completed.
+2222 [main] INFO  c.r.lesson19.Lesson19Application
+                – Starting Lesson19Application using Java 15 on HOME-PC with PID 8472 (D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson19)
+2227 [main] INFO  c.r.lesson19.Lesson19Application
+                – No active profile set, falling back to default profiles: default
+3267 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3299 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+4794 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+4827 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+4829 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+4829 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+5048 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+5048 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2724 ms
+5395 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+5519 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+5835 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+6085 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+6302 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+6355 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7880 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7900 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+7983 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext
+                – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorController' defined in file [D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main\com\redbird\lesson19\controllers\AuthorController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookService' defined in file [D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main\com\redbird\lesson19\services\BookService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.redbird.lesson19.repositories.BookRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+7985 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+7995 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+8007 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+8014 [main] INFO  o.a.catalina.core.StandardService
+                – Stopping service [Tomcat]
+8061 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener
+                – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+8109 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter
+                – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.redbird.lesson19.services.BookService required a bean of type 'com.redbird.lesson19.repositories.BookRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.redbird.lesson19.repositories.BookRepository' in your configuration.
+
+911  [main] INFO  c.r.lesson19.Lesson19Application
+                – Starting Lesson19Application using Java 15 on HOME-PC with PID 5740 (D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson19)
+914  [main] INFO  c.r.lesson19.Lesson19Application
+                – No active profile set, falling back to default profiles: default
+1487 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1504 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2364 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2379 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2379 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2379 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+2477 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2477 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1511 ms
+2672 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2731 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+2890 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3006 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3177 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3195 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4044 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4054 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4087 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext
+                – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorController' defined in file [D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main\com\redbird\lesson19\controllers\AuthorController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookService' defined in file [D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main\com\redbird\lesson19\services\BookService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.redbird.lesson19.repositories.BookRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+4088 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+4092 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+4098 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+4102 [main] INFO  o.a.catalina.core.StandardService
+                – Stopping service [Tomcat]
+4116 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener
+                – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+4133 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter
+                – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.redbird.lesson19.services.BookService required a bean of type 'com.redbird.lesson19.repositories.BookRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.redbird.lesson19.repositories.BookRepository' in your configuration.
+
+587  [main] INFO  c.r.lesson19.Lesson19Application
+                – Starting Lesson19Application using Java 15 on HOME-PC with PID 13552 (D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson19)
+589  [main] INFO  c.r.lesson19.Lesson19Application
+                – No active profile set, falling back to default profiles: default
+1169 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1263 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+1750 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1758 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1758 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1759 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+1851 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1851 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1228 ms
+2004 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2048 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+2130 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2209 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2331 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2354 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2901 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2908 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3331 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3437 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+3667 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+3699 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+3709 [main] INFO  c.r.lesson19.Lesson19Application
+                – Started Lesson19Application in 3.537 seconds (JVM running for 4.343)
+9418 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+9418 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+9419 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+9445 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: {}
+9454 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.BookService
+                – get all books
+9594 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: {}
+9597 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+33931 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: 2
+33941 [http-nio-8080-exec-4] INFO  c.r.lesson19.services.AuthorService
+                – get Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd) by id 2
+33945 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: {}
+33946 [http-nio-8080-exec-4] INFO  c.r.lesson19.services.BookService
+                – get all books
+33949 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: {}
+33950 [http-nio-8080-exec-4] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+40893 [http-nio-8080-exec-7] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: 3
+40903 [http-nio-8080-exec-7] INFO  c.r.lesson19.services.BookService
+                – get Book(id=3, name=asd, creationDate=asd, author=Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd)) by id: 3
+40903 [http-nio-8080-exec-7] INFO  c.r.lesson19.services.BookService
+                – get Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd) by  bookId 3
+40903 [http-nio-8080-exec-7] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: {}
+40903 [http-nio-8080-exec-7] INFO  c.r.lesson19.services.BookService
+                – get all books
+40907 [http-nio-8080-exec-7] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: {}
+40908 [http-nio-8080-exec-7] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+1420041 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+1420042 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+1420045 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+1420051 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+655  [main] INFO  c.r.lesson19.Lesson19Application
+                – Starting Lesson19Application using Java 15 on HOME-PC with PID 14372 (D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson19)
+657  [main] INFO  c.r.lesson19.Lesson19Application
+                – No active profile set, falling back to default profiles: default
+1291 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1369 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+1866 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1876 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1877 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1877 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+1971 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1971 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1276 ms
+2123 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2189 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+2316 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2421 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2501 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2530 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+3166 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3174 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3559 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3652 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+3828 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+3849 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+3857 [main] INFO  c.r.lesson19.Lesson19Application
+                – Started Lesson19Application in 3.683 seconds (JVM running for 4.513)
+6699 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6699 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+6700 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+6734 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: [3]
+6789 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.BookService
+                – get Book(id=3, name=asd, creationDate=asd, author=Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd)) by id: 3
+6794 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.BookService
+                – get Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd) by  bookId 3
+6801 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthorByBook worked for MethodSignatureImpl ms
+6801 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+6801 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.BookService
+                – get all books
+6873 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getBooks worked for MethodSignatureImpl ms
+6874 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+6877 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+6884 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthors worked for MethodSignatureImpl ms
+38528 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+38529 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+38531 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+38538 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+548  [main] INFO  c.r.lesson19.Lesson19Application
+                – Starting Lesson19Application using Java 15 on HOME-PC with PID 2540 (D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson19)
+552  [main] INFO  c.r.lesson19.Lesson19Application
+                – No active profile set, falling back to default profiles: default
+1141 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1205 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+1664 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+1672 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+1672 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+1672 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+1756 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+1756 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1147 ms
+1909 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+1951 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+2052 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2147 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+2250 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+2293 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+3088 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3097 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3528 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3659 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+3921 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+3954 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+3965 [main] INFO  c.r.lesson19.Lesson19Application
+                – Started Lesson19Application in 3.814 seconds (JVM running for 4.493)
+4131 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+4131 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+4132 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+4164 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+4175 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.BookService
+                – get all books
+4386 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getBooks worked for 218 ms in MethodSignatureImpl
+4387 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+4393 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+4400 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthors worked for 13 ms in MethodSignatureImpl
+23032 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+23032 [http-nio-8080-exec-4] INFO  c.r.lesson19.services.BookService
+                – get all books
+23088 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getBooks worked for 56 ms in MethodSignatureImpl
+23089 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+23089 [http-nio-8080-exec-4] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+23094 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthors worked for 5 ms in MethodSignatureImpl
+29682 [http-nio-8080-exec-7] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: [asd, asd, asd, asd]
+31441 [http-nio-8080-exec-7] INFO  c.r.lesson19.services.AuthorService
+                – save author Author(id=4, firstName=asd, lastName=asd, middleName=asd, birthDate=asd)
+31470 [http-nio-8080-exec-7] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method saveOrUpdate worked for 1788 ms in MethodSignatureImpl
+31470 [http-nio-8080-exec-7] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+31470 [http-nio-8080-exec-7] INFO  c.r.lesson19.services.BookService
+                – get all books
+31477 [http-nio-8080-exec-7] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getBooks worked for 7 ms in MethodSignatureImpl
+31478 [http-nio-8080-exec-7] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+31478 [http-nio-8080-exec-7] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+31489 [http-nio-8080-exec-7] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthors worked for 11 ms in MethodSignatureImpl
+31554 [http-nio-8080-exec-8] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+31554 [http-nio-8080-exec-8] INFO  c.r.lesson19.services.BookService
+                – get all books
+31561 [http-nio-8080-exec-8] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getBooks worked for 7 ms in MethodSignatureImpl
+31561 [http-nio-8080-exec-8] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+31561 [http-nio-8080-exec-8] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+31566 [http-nio-8080-exec-8] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthors worked for 5 ms in MethodSignatureImpl
+63116 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: [asd]
+63139 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.AuthorService
+                – get [Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd), Author(id=4, firstName=asd, lastName=asd, middleName=asd, birthDate=asd)] by firstname: asd
+63139 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthorByFirstname worked for 23 ms in MethodSignatureImpl
+63139 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+63140 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.BookService
+                – get all books
+63144 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getBooks worked for 5 ms in MethodSignatureImpl
+63144 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+63144 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+63148 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthors worked for 4 ms in MethodSignatureImpl
+285657 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+285660 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+285668 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+285683 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+941  [main] INFO  c.r.lesson19.Lesson19Application
+                – Starting Lesson19Application using Java 15 on HOME-PC with PID 14400 (D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson19)
+944  [main] INFO  c.r.lesson19.Lesson19Application
+                – No active profile set, falling back to default profiles: default
+1817 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1915 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+2666 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2680 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2682 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2682 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+2829 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2829 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1822 ms
+3030 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3103 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3324 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3440 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3551 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3589 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4430 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4443 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5186 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5327 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+5606 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5639 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+5654 [main] INFO  c.r.lesson19.Lesson19Application
+                – Started Lesson19Application in 5.376 seconds (JVM running for 6.628)
+12933 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+12933 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+12934 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+12969 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+12985 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.BookService
+                – get all books
+13201 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getBooks worked for 226 ms in MethodSignatureImpl
+13201 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+13209 [http-nio-8080-exec-2] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+13222 [http-nio-8080-exec-2] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthors worked for 21 ms in MethodSignatureImpl
+20280 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: [asd]
+20314 [http-nio-8080-exec-4] INFO  c.r.lesson19.services.AuthorService
+                – get [Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd), Author(id=4, firstName=asd, lastName=asd, middleName=asd, birthDate=asd)] by birthdate: asd
+20320 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthorByBirthdate worked for 40 ms in MethodSignatureImpl
+20320 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+20320 [http-nio-8080-exec-4] INFO  c.r.lesson19.services.BookService
+                – get all books
+20329 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getBooks worked for 9 ms in MethodSignatureImpl
+20329 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+20329 [http-nio-8080-exec-4] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+20337 [http-nio-8080-exec-4] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthors worked for 7 ms in MethodSignatureImpl
+83216 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+83219 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+83225 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+83236 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+797  [main] INFO  c.r.lesson19.Lesson19Application
+                – Starting Lesson19Application using Java 15 on HOME-PC with PID 14676 (D:\Projects\Java\JavaTemplates\src\lesson19\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson19)
+800  [main] INFO  c.r.lesson19.Lesson19Application
+                – No active profile set, falling back to default profiles: default
+1546 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1641 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2339 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2351 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2352 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2352 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+2486 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2487 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1638 ms
+2687 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2745 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+2889 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3018 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3118 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3154 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4065 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4084 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4793 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4929 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+5247 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5278 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+5290 [main] INFO  c.r.lesson19.Lesson19Application
+                – Started Lesson19Application in 5.057 seconds (JVM running for 6.013)
+34810 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+34811 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+34812 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 1 ms
+34860 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: [3]
+34953 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.BookService
+                – get Book(id=3, name=asd, creationDate=asd, author=Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd)) by id: 3
+34960 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.BookService
+                – get Author(id=2, firstName=asd, lastName=asd, middleName=asd, birthDate=asd) by  bookId 3
+34966 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthorByBook worked for 100 ms in BookService
+34967 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+34967 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.BookService
+                – get all books
+35105 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getBooks worked for 139 ms in BookService
+35106 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Parameters: []
+35114 [http-nio-8080-exec-1] INFO  c.r.lesson19.services.AuthorService
+                – get all authors
+35128 [http-nio-8080-exec-1] INFO  com.redbird.lesson19.aspects.Aspect
+                – Method getAuthors worked for 22 ms in AuthorService
+59887 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+59889 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+59894 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+59912 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
