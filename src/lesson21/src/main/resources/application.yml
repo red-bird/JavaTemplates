@@ -1,0 +1,32 @@
+spring:
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQL95Dialect
+      jdbc:
+        time_zone: Europe/Moscow
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/library
+    username: postgres
+    password: "0000"
+  mail:
+    protocol: smtp
+    host: smtp.gmail.com
+    port: 587
+    username: redbird8941@gmail.com
+    #env variable
+    password: ${EMAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+student:
+  name: Egor
+  last_name: Paramoshkin
+  group: IKBO-10-19
+  var: "Variant 3"
+
+

@@ -1,0 +1,241 @@
+1496 [main] INFO  c.r.lesson21.Lesson21Application
+                – Starting Lesson21Application using Java 15 on HOME-PC with PID 6104 (D:\Projects\Java\JavaTemplates\src\lesson21\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson21)
+1500 [main] INFO  c.r.lesson21.Lesson21Application
+                – No active profile set, falling back to default profiles: default
+2730 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2825 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+3963 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+4003 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+4003 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+4003 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+4294 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+4294 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2727 ms
+4577 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4672 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+4934 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5136 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+5437 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+5477 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+6960 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+6972 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+7076 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext
+                – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'aspect' defined in file [D:\Projects\Java\JavaTemplates\src\lesson21\build\classes\java\main\com\redbird\lesson21\aspects\Aspect.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailNotifier': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'email' in value "${email}"
+7076 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+7084 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+7090 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+7104 [main] INFO  o.a.catalina.core.StandardService
+                – Stopping service [Tomcat]
+7122 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener
+                – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+7154 [main] ERROR o.s.boot.SpringApplication
+                – Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'aspect' defined in file [D:\Projects\Java\JavaTemplates\src\lesson21\build\classes\java\main\com\redbird\lesson21\aspects\Aspect.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailNotifier': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'email' in value "${email}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.redbird.lesson21.Lesson21Application.main(Lesson21Application.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'emailNotifier': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'email' in value "${email}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'email' in value "${email}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 32 common frames omitted
+1120 [main] INFO  c.r.lesson21.Lesson21Application
+                – Starting Lesson21Application using Java 15 on HOME-PC with PID 11836 (D:\Projects\Java\JavaTemplates\src\lesson21\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson21)
+1120 [main] INFO  c.r.lesson21.Lesson21Application
+                – No active profile set, falling back to default profiles: default
+2295 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2391 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+3264 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3272 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3280 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3280 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3418 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3418 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2233 ms
+3670 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3750 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3966 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4123 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4254 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4285 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5140 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5153 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5801 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5972 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+6293 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6340 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+6354 [main] INFO  c.r.lesson21.Lesson21Application
+                – Started Lesson21Application in 6.058 seconds (JVM running for 8.136)
+30658 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+30658 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+30658 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 0 ms
+30710 [http-nio-8080-exec-1] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+30722 [http-nio-8080-exec-1] INFO  c.r.lesson21.services.BookService
+                – get all books
+31105 [http-nio-8080-exec-1] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getBooks worked for 389 ms in BookService
+31106 [http-nio-8080-exec-1] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+31112 [http-nio-8080-exec-1] INFO  c.r.lesson21.services.AuthorService
+                – get all authors
+31126 [http-nio-8080-exec-1] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getAuthors worked for 20 ms in AuthorService
+55515 [http-nio-8080-exec-6] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: [email, mail, mail, mail]
+55593 [http-nio-8080-exec-6] INFO  c.r.lesson21.services.AuthorService
+                – save author Author(id=5, firstName=email, lastName=mail, middleName=mail, birthDate=mail)
+57452 [http-nio-8080-exec-6] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method saveOrUpdate worked for 1937 ms in AuthorService
+57452 [http-nio-8080-exec-6] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+57452 [http-nio-8080-exec-6] INFO  c.r.lesson21.services.BookService
+                – get all books
+57485 [http-nio-8080-exec-6] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getBooks worked for 33 ms in BookService
+57485 [http-nio-8080-exec-6] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+57485 [http-nio-8080-exec-6] INFO  c.r.lesson21.services.AuthorService
+                – get all authors
+57502 [http-nio-8080-exec-6] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getAuthors worked for 17 ms in AuthorService
+57554 [http-nio-8080-exec-7] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+57554 [http-nio-8080-exec-7] INFO  c.r.lesson21.services.BookService
+                – get all books
+57569 [http-nio-8080-exec-7] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getBooks worked for 15 ms in BookService
+57570 [http-nio-8080-exec-7] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+57570 [http-nio-8080-exec-7] INFO  c.r.lesson21.services.AuthorService
+                – get all authors
+57578 [http-nio-8080-exec-7] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getAuthors worked for 8 ms in AuthorService
+94114 [http-nio-8080-exec-9] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: [mail, 5, mail]
+94114 [http-nio-8080-exec-9] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: [5]
+94135 [http-nio-8080-exec-9] INFO  c.r.lesson21.services.AuthorService
+                – get Author(id=5, firstName=email, lastName=mail, middleName=mail, birthDate=mail) by id 5
+94136 [http-nio-8080-exec-9] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getAuthorById worked for 22 ms in AuthorService
+94163 [http-nio-8080-exec-9] INFO  c.r.lesson21.services.BookService
+                – Save book Book(id=6, name=mail, creationDate=mail, author=Author(id=5, firstName=email, lastName=mail, middleName=mail, birthDate=mail))
+95142 [http-nio-8080-exec-9] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method saveOrUpdate worked for 1028 ms in BookService
+95142 [http-nio-8080-exec-9] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+95142 [http-nio-8080-exec-9] INFO  c.r.lesson21.services.BookService
+                – get all books
+95157 [http-nio-8080-exec-9] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getBooks worked for 15 ms in BookService
+95157 [http-nio-8080-exec-9] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+95157 [http-nio-8080-exec-9] INFO  c.r.lesson21.services.AuthorService
+                – get all authors
+95168 [http-nio-8080-exec-9] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getAuthors worked for 11 ms in AuthorService
+95208 [http-nio-8080-exec-10] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+95208 [http-nio-8080-exec-10] INFO  c.r.lesson21.services.BookService
+                – get all books
+95231 [http-nio-8080-exec-10] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getBooks worked for 23 ms in BookService
+95231 [http-nio-8080-exec-10] INFO  com.redbird.lesson21.aspects.Aspect
+                – Parameters: []
+95231 [http-nio-8080-exec-10] INFO  c.r.lesson21.services.AuthorService
+                – get all authors
+95240 [http-nio-8080-exec-10] INFO  com.redbird.lesson21.aspects.Aspect
+                – Method getAuthors worked for 9 ms in AuthorService
+112658 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+112658 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+112666 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+112673 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
