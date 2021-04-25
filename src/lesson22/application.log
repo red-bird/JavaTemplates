@@ -1,0 +1,1605 @@
+913  [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 2480 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+916  [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2012 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2085 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2824 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2957 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1984 ms
+3141 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3205 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+1134 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 14004 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1137 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2115 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2208 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 80 ms. Found 2 JPA repository interfaces.
+3108 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3123 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3124 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3124 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3266 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3266 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2033 ms
+3528 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3621 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3867 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3996 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4152 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4184 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5142 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5160 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5791 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext
+                – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedulerServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'backup.path' in value "${backup.path}"
+5793 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+5801 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+5812 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+5818 [main] INFO  o.a.catalina.core.StandardService
+                – Stopping service [Tomcat]
+5837 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener
+                – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+5864 [main] ERROR o.s.boot.SpringApplication
+                – Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedulerServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'backup.path' in value "${backup.path}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.redbird.lesson22.Lesson22Application.main(Lesson22Application.java:10)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'backup.path' in value "${backup.path}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+2471 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 12516 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+2475 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+3279 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3366 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+4056 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+4068 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+4068 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+4069 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+4178 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+4178 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1647 ms
+4394 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4452 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+4634 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4758 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4990 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+5027 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+6015 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+6026 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6627 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext
+                – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedulerServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'backup.path' in value "${backup.path}"
+6629 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+6634 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+6642 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+6646 [main] INFO  o.a.catalina.core.StandardService
+                – Stopping service [Tomcat]
+6664 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener
+                – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+6705 [main] ERROR o.s.boot.SpringApplication
+                – Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedulerServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'backup.path' in value "${backup.path}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.redbird.lesson22.Lesson22Application.main(Lesson22Application.java:10)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'backup.path' in value "${backup.path}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+1123 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 15056 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1128 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2101 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2204 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+3049 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3064 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3064 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3065 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3201 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3202 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2002 ms
+3455 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3528 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3735 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3899 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4031 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4064 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5013 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5024 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5609 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created ./backup
+5662 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5822 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+6140 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6193 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+6208 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 5.854 seconds (JVM running for 7.267)
+35945 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+35947 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+35951 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+35961 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1055 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 9756 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1060 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+1898 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1993 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2850 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2866 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2866 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2867 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3016 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3017 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1893 ms
+3253 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3325 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3521 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3676 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3809 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3844 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4752 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4764 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5366 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created ./backup
+5422 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5614 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+5927 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5959 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+5974 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 5.707 seconds (JVM running for 6.802)
+192589 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+192592 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+192598 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+192604 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1089 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 6092 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1094 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2201 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2306 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 89 ms. Found 2 JPA repository interfaces.
+3236 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3253 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3254 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3254 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3396 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3397 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2235 ms
+3641 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3732 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3927 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4082 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4263 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4302 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5275 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5287 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5877 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+5928 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6081 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+6432 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6484 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+6500 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 6.17 seconds (JVM running for 7.402)
+169961 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+169964 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+169971 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+169987 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1028 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 8232 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1031 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+1961 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2063 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+2985 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2999 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3000 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3000 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3139 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3139 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2053 ms
+3390 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3466 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3695 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3866 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3985 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4028 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5074 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5096 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5679 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+5680 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+5695 [main] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+5903 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+5914 [main] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+5935 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+5936 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+5983 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6141 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+6525 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6582 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+6607 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 6.35 seconds (JVM running for 7.52)
+27503 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+27505 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+27511 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+27526 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+851  [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 10180 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+855  [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+1678 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1757 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2494 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2510 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2511 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2512 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+2641 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2642 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1727 ms
+2866 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+2939 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3090 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3217 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3332 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3372 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4164 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4176 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5131 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+50626 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+86659 [main] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+96688 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+99774 [main] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+99903 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+100755 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+115506 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+115708 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+116125 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+116176 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+116194 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 115.957 seconds (JVM running for 117.099)
+130208 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+130210 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+130215 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+130224 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+969  [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 11488 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+972  [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+1876 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2012 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 104 ms. Found 2 JPA repository interfaces.
+2810 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2826 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2826 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2827 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+2969 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2969 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1937 ms
+3225 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3293 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3487 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3676 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3843 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3908 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4842 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4854 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5405 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+5406 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+5421 [main] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+5603 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+5609 [main] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+5627 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+5627 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+5689 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5823 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+6099 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6141 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+6157 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 5.896 seconds (JVM running for 7.063)
+27239 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+27241 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+27245 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+27260 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1026 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 11440 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1030 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2002 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2112 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 89 ms. Found 2 JPA repository interfaces.
+3114 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3136 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3137 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3138 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3327 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3327 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2235 ms
+3577 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3644 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3844 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4015 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4138 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4179 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5200 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5220 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5868 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+5919 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6070 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+6421 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6463 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+6477 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 6.1 seconds (JVM running for 7.347)
+93183 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+93185 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+93189 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+93198 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1365 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 2636 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1368 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2231 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2331 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+3088 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3103 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3104 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3104 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3246 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3247 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1826 ms
+3506 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3574 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3767 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3928 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4110 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4159 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5034 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5047 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+10556 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+14731 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14920 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+15371 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+15387 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 14.739 seconds (JVM running for 16.339)
+15417 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+15418 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+15422 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+15427 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+943  [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 14300 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+945  [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+1747 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1832 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2612 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2622 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2623 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2623 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+2746 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2747 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1750 ms
+2969 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3024 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3162 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3281 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3433 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3465 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4389 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4407 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+19764 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+37095 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+37388 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+38012 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+38089 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+38112 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 37.886 seconds (JVM running for 38.767)
+276583 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+276584 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+276588 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+276597 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+966  [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 7132 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+970  [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+1897 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2011 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2913 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2929 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2930 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2930 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3072 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3072 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2045 ms
+3336 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3420 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3663 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3800 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3944 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3992 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4857 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4869 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+20532 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+25241 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+25577 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+26261 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+26351 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+26376 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 26.114 seconds (JVM running for 27.302)
+377047 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+377048 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+377053 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+377060 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1406 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 11456 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1411 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2375 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2460 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+3361 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3374 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3374 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3375 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3514 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3515 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2037 ms
+3782 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3858 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+4061 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4216 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4360 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4387 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5300 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5315 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6351 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+6418 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6738 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+7346 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+7442 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+7477 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 7.08 seconds (JVM running for 9.317)
+222237 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+222244 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+222256 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+222273 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1158 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 10276 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1163 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2407 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2575 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 148 ms. Found 2 JPA repository interfaces.
+3507 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3521 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3522 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3522 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3688 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3689 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2450 ms
+3950 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4025 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+4242 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4402 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4617 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4666 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5784 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5803 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+7047 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+7140 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+7402 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+7985 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler
+                – Initializing ExecutorService 'taskScheduler'
+8088 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+8177 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+18596 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+18607 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+18610 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 18.283 seconds (JVM running for 19.766)
+18852 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+18854 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+18871 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+18871 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+28202 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+28203 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+28235 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+28236 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+28250 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+28251 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+48207 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+48211 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+48274 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+48276 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+48286 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+48286 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+89123 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+95356 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+105555 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+115032 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+115059 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+116697 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+124639 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+124640 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+124699 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+124700 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+124720 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+124721 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+128026 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+128028 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+128069 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+128070 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+128083 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+128083 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+129944 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+129945 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+129980 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+129981 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+129994 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+129995 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+151496 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+193410 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+193455 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+193458 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+193520 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+193521 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+193524 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+193525 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+193551 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+193552 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+193564 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+193565 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+193565 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+193567 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+193587 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+193588 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+193599 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+193599 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+193740 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler
+                – Shutting down ExecutorService 'taskScheduler'
+193742 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+193745 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+193769 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+193798 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1106 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 13868 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1113 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2101 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2200 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+3068 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3083 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3083 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3084 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3227 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3227 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2032 ms
+3507 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3579 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3775 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3947 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4152 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4202 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5419 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5438 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6050 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+6104 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6288 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+6579 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler
+                – Initializing ExecutorService 'taskScheduler'
+6638 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+6679 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+6691 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+6697 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 6.363 seconds (JVM running for 7.66)
+6707 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+6916 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+6922 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+6940 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+6940 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+26700 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+26701 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+26729 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+26730 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+26742 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+26743 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+46705 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+46708 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+46741 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+46743 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+46755 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+46756 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+66705 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+66706 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+66743 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+66746 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+66762 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+66763 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+73235 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler
+                – Shutting down ExecutorService 'taskScheduler'
+73238 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+73241 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+73247 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+73257 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1198 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 12096 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1202 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+2246 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2358 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+3440 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+3452 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+3453 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+3453 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3665 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3666 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2406 ms
+4010 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+4088 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+4290 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4490 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+4641 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+4677 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5600 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5618 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6235 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+6247 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext
+                – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedulerServiceImpl' defined in file [D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main\com\redbird\lesson22\services\SchedulerServiceImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'doScheduledTask': Cron expression must consist of 6 fields (found 5 in "*/1 * * * *")
+6248 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+6252 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+6258 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+6263 [main] INFO  o.a.catalina.core.StandardService
+                – Stopping service [Tomcat]
+6283 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener
+                – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+6315 [main] ERROR o.s.boot.SpringApplication
+                – Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'schedulerServiceImpl' defined in file [D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main\com\redbird\lesson22\services\SchedulerServiceImpl.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'doScheduledTask': Cron expression must consist of 6 fields (found 5 in "*/1 * * * *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:610)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.redbird.lesson22.Lesson22Application.main(Lesson22Application.java:10)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'doScheduledTask': Cron expression must consist of 6 fields (found 5 in "*/1 * * * *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:511)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$null$1(ScheduledAnnotationBeanPostProcessor.java:374)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.lambda$postProcessAfterInitialization$2(ScheduledAnnotationBeanPostProcessor.java:374)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:437)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	... 16 common frames omitted
+920  [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 4296 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+923  [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+1831 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2004 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 157 ms. Found 2 JPA repository interfaces.
+2920 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2937 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2938 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2939 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+3146 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3147 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2161 ms
+3350 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3411 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3564 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3685 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3800 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3829 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4634 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4652 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5242 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+5300 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5454 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+5740 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler
+                – Initializing ExecutorService 'taskScheduler'
+5798 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5840 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+5861 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 5.545 seconds (JVM running for 6.832)
+6728 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+6766 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+6977 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+6985 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+7008 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+7008 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+7813 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+7814 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+7851 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+7853 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+7866 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+7866 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+8739 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+8741 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+8805 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+8806 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+8816 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+8817 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+9736 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+9737 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+9812 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+9812 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+9824 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+9824 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+10745 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+10747 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+10812 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+10812 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+10832 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+10833 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+11729 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+11730 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+11792 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+11793 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+11805 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+11806 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+12738 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+12739 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+12768 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+12769 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+12787 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+12787 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+13741 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+13742 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+13808 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+13809 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+13822 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+13823 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+14735 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+14735 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+14763 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+14764 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+14777 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+14778 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+15735 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+15736 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+15799 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+15800 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+15829 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+15830 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+16737 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+16738 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+16764 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+16766 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+16781 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+16781 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+17729 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+17730 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+17802 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+17803 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+17813 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+17814 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+18728 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+18729 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+18756 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+18757 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+18768 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+18769 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+19739 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+19740 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+19765 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+19766 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+19786 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+19786 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+20730 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+20731 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+20762 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+20763 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+20770 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+20771 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+21729 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+21731 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+21756 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+21757 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+21768 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+21769 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+22730 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+22732 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+22757 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+22758 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+22768 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+22769 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+23734 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+23736 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+23761 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+23762 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+23773 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+23773 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+24742 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+24744 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+24791 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+24793 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+24799 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+24800 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+25743 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+25744 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+25771 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+25773 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+25800 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+25801 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+26730 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+26731 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+26755 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+26756 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+26768 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+26768 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+27742 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+27743 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+27811 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+27812 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+27828 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+27828 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+28741 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – clear backup directory
+28741 [scheduling-1] INFO  c.r.l.services.BookServiceImpl
+                – get all books
+28767 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup books
+28768 [scheduling-1] INFO  c.r.l.services.AuthorServiceImpl
+                – get all authors
+28779 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup authors
+28780 [scheduling-1] INFO  c.r.l.services.SchedulerServiceImpl
+                – backup complete
+28865 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler
+                – Shutting down ExecutorService 'taskScheduler'
+28867 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+28869 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+28874 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+28885 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
+1066 [main] INFO  c.r.lesson22.Lesson22Application
+                – Starting Lesson22Application using Java 15 on HOME-PC with PID 5960 (D:\Projects\Java\JavaTemplates\src\lesson22\build\classes\java\main started by Redbird in D:\Projects\Java\JavaTemplates\src\lesson22)
+1069 [main] INFO  c.r.lesson22.Lesson22Application
+                – No active profile set, falling back to default profiles: default
+1942 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2028 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2797 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2811 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2812 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2812 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/9.0.45]
+2962 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+2963 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1828 ms
+3220 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3284 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 5.4.30.Final
+3485 [main] INFO  o.h.annotations.common.Version
+                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3629 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3753 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3801 [main] INFO  org.hibernate.dialect.Dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4695 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4712 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5420 [main] INFO  c.r.l.services.SchedulerServiceImpl
+                – Directory created backup
+5485 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5647 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Initializing ExecutorService 'applicationTaskExecutor'
+5869 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler
+                – Initializing ExecutorService 'taskScheduler'
+5920 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5951 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+5970 [main] INFO  c.r.lesson22.Lesson22Application
+                – Started Lesson22Application in 5.712 seconds (JVM running for 6.821)
+11382 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler
+                – Shutting down ExecutorService 'taskScheduler'
+11383 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor
+                – Shutting down ExecutorService 'applicationTaskExecutor'
+11387 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+11394 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+11401 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
