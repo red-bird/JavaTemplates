@@ -33,6 +33,6 @@ public class Aspect {
                 proceedingJoinPoint.getSignature().getDeclaringType().getSimpleName());
         return res;
     }
-    @Pointcut("within(com.redbird.lesson19.services.*)")
+    @Pointcut("within(com.redbird.lesson20.services.*)")
     public void allServiceMethods() { }
 }
